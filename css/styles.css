@@ -7,16 +7,52 @@
   --bg-color: #2f303a;
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 body {
   font-family: "Roboto", "Raleway", sans-serif;
   font-style: normal;
   font-weight: normal;
   color: var(--main-text-color);
+  max-width: 1600px;
 }
 
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.list {
+  list-style: none;
+
+  padding-left: 0px;
 }
 
 .web,
@@ -33,10 +69,6 @@ a {
 }
 .studio-footer {
   color: var(--two-main-color);
-}
-
-.list {
-  list-style: none;
 }
 
 a:hover,
@@ -74,36 +106,65 @@ button:focus {
 }
 /* Шапка */
 .cap {
+  height: 600px;
+
   background: var(--bg-color);
+  text-align: center;
+
+  padding-top: 200px;
+  padding-bottom: 280px;
+  margin-bottom: 94px;
 }
-.h1 {
+.cap-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--two-main-color);
+
+  margin-bottom: 30px;
 }
-.cap button {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
+.cap-button {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+
   color: var(--two-main-color);
   background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  display: inline-block;
+  padding: 10px 32px;
+  border-radius: 4px;
 }
+
 /* Особенности */
-.features h3 {
+
+.features {
+  margin-bottom: 94px;
+}
+.features-title {
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--main-text-color);
+  margin-bottom: 10px;
 }
-.features p {
+.features-text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--title-color);
+}
+
+/* Чем мы занимаемся */
+.we-do {
+  margin-bottom: 94px;
 }
 
 .header-two-level {
@@ -111,16 +172,32 @@ button:focus {
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
+
+  margin-bottom: 50px;
 }
+
 /* Наша команда */
-.team h4 {
+.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.team-card {
+  padding-bottom: 30px;
+}
+.team-foto {
+  margin-bottom: 30px;
+}
+
+.team-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
+  margin-bottom: 10px;
 }
 
-.team p {
+.team-text {
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
@@ -128,7 +205,16 @@ button:focus {
 }
 /* Футер */
 .footer {
+  height: 252px;
   background: var(--bg-color);
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 20px;
 }
 
 .address {
@@ -137,6 +223,14 @@ button:focus {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--two-main-color);
+
+  display: inline-block;
+  margin-bottom: 9px;
+}
+
+.address-mail {
+  display: inline-block;
+  margin-bottom: 9px;
 }
 /* Страница портфолио */
 .button {
