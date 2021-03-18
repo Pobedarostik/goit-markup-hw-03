@@ -261,12 +261,16 @@ header {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-
+.footer .container {
+  display: block;
+}
 .footer-logo {
+  display: block;
   margin-bottom: 20px;
 }
 
 .address {
+  display: block;
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -274,10 +278,14 @@ header {
   color: var(--two-main-color);
   margin-bottom: 9px;
 }
-
+.contact-footer {
+  display: block;
+}
 .address-mail {
+  display: block;
   margin-bottom: 9px;
 }
+
 /* Страница портфолио */
 .portfolio {
   text-align: center;
